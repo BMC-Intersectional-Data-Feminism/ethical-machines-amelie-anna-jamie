@@ -50,6 +50,12 @@ def student_algorithm(option1, option2):
             return option2, option1
     else :
         return option1, option2
+    
+    if (option1[1] in cat_rank and option2[1] in cat_rank) :
+        if((cat_rank[option1[1]]) > (cat_rank[option2[0]])):
+            return option1, option2
+        else :
+            return option2, option1
 
 # Function to run the simulation using a given algorithm
 # Run the activity
