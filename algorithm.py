@@ -16,6 +16,7 @@ def always_pick_non_vehicle(option1, option2):
 def student_algorithm(option1, option2):
     """Students define their own algorithm"""
     print('Write your own algorithm here!')
+    #how to make and use dictionaries python AI overview
     cat_rank = {
     "Ambulance": 20, 
     "Pedestrian": 18, 
