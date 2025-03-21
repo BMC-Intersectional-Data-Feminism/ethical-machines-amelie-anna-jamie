@@ -42,9 +42,12 @@ def student_algorithm(option1, option2):
     }
     m1 = 0
     m2 = 0
-    if (option1[1] in moral_rank and option2[1] in moral_rank) :
-        m1 = moral_rank[option1[1]]
+    if (option2[1] in moral_rank) :
         m2 = moral_rank[option2[1]]
+
+    if (option1[1] in moral_rank) :
+        m1 = moral_rank[option1[1]]
+
 
     if (option1[0] in cat_rank and option2[0] in cat_rank) :
         if ((cat_rank[option1[0]]+ m1) > (cat_rank[option2[0]])+ m2) :
