@@ -38,7 +38,7 @@ def student_algorithm(option1, option2):
     }
 
     moral_rank = {
-        "Large wild animal such as a deer": 10
+        "Large wild animal such as a deer": 20
     }
     m1 = 0
     m2 = 0
