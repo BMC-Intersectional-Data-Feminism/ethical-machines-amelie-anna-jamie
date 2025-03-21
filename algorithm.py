@@ -14,6 +14,9 @@ def always_pick_non_vehicle(option1, option2):
 
 # Student function placeholder
 def student_algorithm(option1, option2):
+    print(option1)
+    print(option1[0])
+    print(option1[1])
     """Students define their own algorithm"""
     print('Write your own algorithm here!')
     #how to make and use dictionaries python AI overview
@@ -21,7 +24,7 @@ def student_algorithm(option1, option2):
     "Ambulance": 20, 
     "Pedestrian": 18, 
     "Bicyclist": 12, 
-    "Public Bus": 11, 
+    "Public bus": 11, 
     "Light Rail": 10, 
     "Motorcyclist": 9, 
     "Police vehicle": 8, 
@@ -48,14 +51,12 @@ def student_algorithm(option1, option2):
             return option1, option2
         else :
             return option2, option1
-    else :
-        return option1, option2
     
-    if (option1[1] in cat_rank and option2[1] in cat_rank) :
-        if((cat_rank[option1[1]]) > (cat_rank[option2[0]])):
-            return option1, option2
-        else :
-            return option2, option1
+    # if (option1[1] in cat_rank and option2[1] in cat_rank) :
+    #     if((cat_rank[option1[1]]) > (cat_rank[option2[0]])):
+    #         return option1, option2
+    #     else :
+    #         return option2, option1
 
 # Function to run the simulation using a given algorithm
 # Run the activity
@@ -63,7 +64,7 @@ def student_algorithm(option1, option2):
 
 # Run the activity using the example algorithm
 #print("\n🔹 Running Example Algorithm: Always Pick Non-Vehicle 🔹")
-urban_planning.run_activity(num_scenarios=25, decision_function = always_pick_non_vehicle)
+#urban_planning.run_activity(num_scenarios=25, decision_function = always_pick_non_vehicle)
 urban_planning.run_activity(num_scenarios=25, decision_function = student_algorithm)
 
 #print("\n🔹 Now it's your turn! Modify 'student_algorithm' and run again. 🔹")
